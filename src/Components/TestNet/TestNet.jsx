@@ -32,7 +32,7 @@ const TestNet = () => {
 
                 <div className="m-auto">
                     <ul className='flex justify-evenly'>
-                        <li className='w-[20rem] border p-4 rounded-md :hover cursor-pointer mx-4 flex items-center justify-between'>
+                        <li className='w-[20rem] border p-4 rounded-md hover:cursor-pointer mx-4 flex items-center justify-between'>
                             <div className='flex items-center justify-between'>
                                 <img className='w-[3.5rem]' src={logo} alt="" />
                                 <div className='mx-4'>
@@ -42,7 +42,7 @@ const TestNet = () => {
                             </div>
                             <BsArrowUpRight className='text-white' />
                         </li>
-                        <li className='w-[20rem] border p-4 rounded-md :hover cursor-pointer mx-4 flex items-center justify-between'>
+                        <li className='w-[20rem] border p-4 rounded-md  hover:cursor-pointer mx-4 flex items-center justify-between'>
                             <div className='flex items-center justify-between'>
                                 <img className='w-[3.5rem]' src={logo} alt="" />
                                 <div className='mx-4'>
@@ -51,7 +51,7 @@ const TestNet = () => {
                             </div>
                             <BsArrowUpRight className='text-white' />
                         </li>
-                        <li className='w-[20rem] border p-4 rounded-md :hover cursor-pointer mx-4 flex items-center justify-between'>
+                        <li className='w-[20rem] border p-4 rounded-md hover:cursor-pointer mx-4 flex items-center justify-between'>
                             <div className='flex items-center justify-between'>
                                 <img className='w-[3.5rem]' src={logo} alt="" />
                                 <div className='mx-4'>

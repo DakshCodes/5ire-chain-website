@@ -28,7 +28,7 @@ const Footer = () => {
                     <BsDiscord />
                 </div>
             </div>
-            <div className="text-left w-[8%] h-[89%]">
+            <div className="text-left w-[15%] h-[89%]">
                 <h1 className='text-3xl mb-2 text-[#26a0a0]'>General</h1>
                 <ul className='text-white text-left'>
                     <li className='my-4'>About us</li>
