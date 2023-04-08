@@ -12,7 +12,7 @@ const SideNav = () => {
 
   return (
     <div className='flex z-50'>
-      <ul className=' fixed z-50 left-0 top-[25%]'>
+      <ul className='group-list !fixed !z-50 !left-0 !top-[25%]'>
         <li>
           <a onClick={(e) =>{e.preventDefault();
            setToggle(1)}}

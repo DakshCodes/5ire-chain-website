@@ -10,7 +10,7 @@
     transform: translateX(0px);
   }
 }
-ul {
+.group-list{
   animation: lefttoright forwards  ease 1.4s;
   height: 55vh;
   width: 5.7%;
