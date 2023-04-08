@@ -1,10 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
+import SocialIcons from './Components/SocialIcons/SocialIcons'
+import '../src/Components/SocialIcons/SocialIcons.css';
 import './index.css'
+import Test from './Test'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App />
+    {/* <SocialIcons /> */}
   </React.StrictMode>,
 )

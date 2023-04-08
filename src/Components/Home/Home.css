@@ -1,0 +1,86 @@
+.cube-animate {
+    width: 80px;
+    top: -15px;
+    left: -20px;
+    object-fit: cover;
+    position: absolute;
+    animation: object1 alternate 1.7s  infinite;
+}
+
+.cube-animate2 {
+    width: 80px;
+    top: -35px;
+    right: -20px;
+    object-fit: cover;
+    position: absolute;
+    animation: object2 alternate 0.8s infinite;
+}
+
+.cube-animate3 {
+    width: 80px;
+    object-fit: cover;
+    bottom: 35px;
+    left: -20px;
+    position: absolute;
+    animation: object3 alternate 0.8s infinite;
+}
+
+.cube-animate4 {
+    object-fit: cover;
+    width: 80px;
+    bottom: 0px;
+    right: -20px;
+    position: absolute;
+    animation: object4 alternate 1.7s infinite;
+}
+
+@keyframes object1 {
+    from {
+        position: absolute;
+        top: -35px;
+        left: -20px;
+    }
+
+    to {
+        transform: translate3d(300px, 110px, 50px);
+
+    }
+}
+
+@keyframes object2 {
+    from {
+        position: absolute;
+        top: -35px;
+        right: -20px;
+    }
+
+    to {
+        transform: translate3d(-300px, 140px, 50px);
+    }
+}
+
+@keyframes object3 {
+    from {
+        position: absolute;
+        bottom: 35px;
+        left: -20px;
+    }
+
+    to {
+        transform: translate3d(300px, -110px, 50px);
+
+    }
+}
+
+@keyframes object4 {
+    from {
+        position: absolute;
+        bottom: 0px;
+        right: -20px;
+    }
+
+    to {
+        transform: translate3d(-260px, -130px, 50px);
+
+    }
+}
