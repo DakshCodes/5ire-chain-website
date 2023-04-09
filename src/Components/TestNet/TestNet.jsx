@@ -6,10 +6,12 @@ import VidImg from "../TestNet/5ire-video.png"
 // import Footer from '../Footer/Footer';
 import { BsArrowUpRight } from "react-icons/bs"
 import Footer from '../Footer/Footer';
+import SideNav from '../SideNav/SideNav';
 
 const TestNet = () => {
     return (
         <>
+        <SideNav number={3} />
             <main className="sustain flex flex-col  bg-no-repeat bg-cover bg-center">
                 <div className="sustain-content flex flex-col justify-center items-center  -green-500  m-auto w-[85vw] h-[90vh] ">
                     <div className="heading m-4 w-[100%] flex flex-col text-center">
@@ -32,7 +34,7 @@ const TestNet = () => {
 
                 <div className="m-auto">
                     <ul className='flex justify-evenly'>
-                        <li className='w-[20rem] border p-4 rounded-md :hover cursor-pointer mx-4 flex items-center justify-between'>
+                        <li className='w-[20rem] border p-4 rounded-md hover:cursor-pointer mx-4 flex items-center justify-between'>
                             <div className='flex items-center justify-between'>
                                 <img className='w-[3.5rem]' src={logo} alt="" />
                                 <div className='mx-4'>
@@ -42,7 +44,7 @@ const TestNet = () => {
                             </div>
                             <BsArrowUpRight className='text-white' />
                         </li>
-                        <li className='w-[20rem] border p-4 rounded-md :hover cursor-pointer mx-4 flex items-center justify-between'>
+                        <li className='w-[20rem] border p-4 rounded-md  hover:cursor-pointer mx-4 flex items-center justify-between'>
                             <div className='flex items-center justify-between'>
                                 <img className='w-[3.5rem]' src={logo} alt="" />
                                 <div className='mx-4'>
@@ -51,7 +53,7 @@ const TestNet = () => {
                             </div>
                             <BsArrowUpRight className='text-white' />
                         </li>
-                        <li className='w-[20rem] border p-4 rounded-md :hover cursor-pointer mx-4 flex items-center justify-between'>
+                        <li className='w-[20rem] border p-4 rounded-md hover:cursor-pointer mx-4 flex items-center justify-between'>
                             <div className='flex items-center justify-between'>
                                 <img className='w-[3.5rem]' src={logo} alt="" />
                                 <div className='mx-4'>

@@ -5,60 +5,55 @@ import { BsPinAngle } from 'react-icons/bs'
 import { TbReportSearch } from 'react-icons/tb'
 import { GrValidate } from 'react-icons/gr'
 import { FaEnvira } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 
-const SideNav = () => {
-  const [toggle, setToggle] = useState(1);
+const SideNav = ({number}) => {
+  const [toggle, setToggle] = useState(number);
   // const toggle=1;
 
   return (
     <div className='flex z-50'>
-      <ul className='group-list !fixed !z-50 !left-0 !top-[25%]'>
+      <ul className='group-list !fixed !z-50 !left-0 !top-[30%]'>
         <li>
-          <a onClick={(e) =>{e.preventDefault();
-           setToggle(1)}}
+          <a onClick={(e) => {
+            e.preventDefault();
+            setToggle(1)
+          }}
             class={`list-item  ${toggle === 1 ? '!bg-[#26a0a0] !w-[9em] !text-[#fffcfb] !translate-x-[2em]' : 'bg-black'}`} href=''>
+          <Link to={'/'}>
             <AiOutlineHome />
             <span className={toggle === 1 ? '!block' : ''}>HOME</span>
+            </Link>
           </a>
         </li>
         <li>
-          <a onClick={(e) =>{e.preventDefault(); setToggle(2)}} className={`list-item  ${toggle === 2 ? '!bg-[#26a0a0] !w-[9em] !text-[#fffcfb] !translate-x-[2em]' : 'bg-black'}`} href=''
-
-          >
-            <AiOutlineInfoCircle />
-            <span className={toggle === 2 ? '!block' : ''}>ABOUT</span>
-          </a>
+            <a onClick={(e) => { e.preventDefault(); setToggle(3) }} class='list-item' href=''
+              className={`list-item  ${toggle === 3 ? '!bg-[#26a0a0] !w-[9em] !text-[#fffcfb] !translate-x-[2em]' : 'bg-black'}`}
+            >
+          <Link to='/testnet'>
+              <BsPinAngle />
+              <span className={toggle === 3 ? '!block' : ''}>TESTNET</span>
+          </Link>
+            </a>
         </li>
         <li>
-          <a onClick={(e) =>{e.preventDefault(); setToggle(3)}} class='list-item' href=''
-            className={`list-item  ${toggle === 3 ? '!bg-[#26a0a0] !w-[9em] !text-[#fffcfb] !translate-x-[2em]' : 'bg-black'}`}
-          >
-            <BsPinAngle />
-            <span className={toggle === 3 ? '!block' : ''}>TESTNET</span>
-          </a>
-        </li>
-        <li>
-          <a onClick={(e) =>{e.preventDefault(); setToggle(4)}} class='list-item' href=''
+          <a onClick={(e) => { e.preventDefault(); setToggle(4) }} class='list-item' href=''
             className={`list-item  ${toggle === 4 ? '!bg-[#26a0a0] !w-[9em] !text-[#fffcfb] !translate-x-[2em]' : 'bg-black'}`}
           >
+            <Link to={'/research'}>
             <TbReportSearch />
             <span className={toggle === 4 ? '!block' : ''}>RESEARCH</span>
+            </Link>
           </a>
         </li>
         <li>
-          <a onClick={(e) =>{e.preventDefault(); setToggle(5)}} class='list-item' href=''
-            className={`list-item  ${toggle === 5 ? '!bg-[#26a0a0] !w-[9em] !text-[#fffcfb] !translate-x-[2em]' : 'bg-black'}`}
-          >
-            <GrValidate />
-            <span className={toggle === 5 ? '!block' : ''}>VALIDATOR</span>
-          </a>
-        </li>
-        <li>
-          <a onClick={(ee) =>{e.preventDefault(); setToggle(6)}} class='list-item' href=''
+          <a onClick={(ee) => { e.preventDefault(); setToggle(6) }} class='list-item' href=''
             className={`list-item  ${toggle === 6 ? '!bg-[#26a0a0] !w-[9em] !text-[#fffcfb] !translate-x-[2em]' : 'bg-black'}`}
           >
+            <Link to={'/sustain'}>
             <FaEnvira />
             <span className={toggle === 6 ? '!block' : ''}>SUSTAIN</span>
+            </Link>
           </a>
         </li>
       </ul>

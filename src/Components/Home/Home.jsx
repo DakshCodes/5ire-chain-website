@@ -29,36 +29,32 @@ const Home = () => {
 
 
 
-        <ul className='flex justify-evenly my-10 flex-wrap gap-10'>
-          <li className='w-[20rem] border p-4 rounded-md :hover cursor-pointer  flex items-center justify-between'>
+        <ul className='flex z-50 justify-evenly my-16 flex-wrap gap-7 mr-5'>
+          <li className='w-[13rem] border border-[#26a0a0] hover:bg-[#26a0a0]  border-2  transition-all duration-300  py-2 rounded-3xl  cursor-pointer  flex items-center justify-center'>
             <div className='flex items-center justify-between'>
-              <img className='w-[3.5rem]' src='' alt="" />
               <div className='mx-4'>
-                <p className='text-white'>Get Started</p>
-                <p className='text-[#00ff38]'>5ire Documentation</p>
+                <p className='text-white font-medium text-xl'>Get Started</p>
+                <p className='text-[#00ff38] font-medium '>5ire Documentation</p>
               </div>
             </div>
-            <BsArrowUpRight className='text-white' />
+            <BsArrowUpRight className='text-[#26a0a0] text-xl' />
           </li>
-          <li className='w-[20rem] border p-4 rounded-md :hover cursor-pointer  flex items-center justify-between'>
+          <li className='w-[13rem] border border-2 border-[#26a0a0]  hover:bg-[#26a0a0] transition-all duration-300   py-4 rounded-3xl  cursor-pointer  flex items-center justify-center'>
             <div className='flex items-center justify-between'>
-              <img className='w-[3.5rem]' src='' alt="" />
               <div className='mx-4'>
-                <p className='text-white'>5ire Explorer</p>
+                <p className='text-white font-medium text-xl'>5ire Explorer</p>
               </div>
             </div>
-            <BsArrowUpRight className='text-white' />
+            <BsArrowUpRight className='text-[#26a0a0] text-xl' />
           </li>
-          <li className='w-[15rem] text-center border p-4 rounded-md :hover cursor-pointer  flex items-center justify-between'>
+          <li className='w-[13rem] text-center border-2 border-[#26a0a0] hover:bg-[#26a0a0] transition-all duration-300    border py-4 rounded-3xl cursor-pointer  flex items-center justify-center'>
             <div className='flex items-center justify-between'>
-              <img className='w-[3.5rem]' src='' alt="" />
               <div className='mx-4'>
-                <p className='text-white'>Build To Earn</p>
+                <p className='text-white font-medium text-xl'>Build To Earn</p>
               </div>
             </div>
-            <BsArrowUpRight className='text-white' />
+            <BsArrowUpRight className='text-[#26a0a0] text-xl' />
           </li>
-
         </ul>
 
 

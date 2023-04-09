@@ -1,20 +1,26 @@
-import React from "react"
+import React from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Landing from './Pages/Landing';
 import SideNav from "./Components/SideNav/SideNav"
 import './index.css';
 import '../src/Components/SideNav/SideNav.css';
 import '../src/Components/Home/Home.css';
 import '../src/Components/Sustainbility/Sustainability.css';
-import Landing from "./Pages/Landing";
-import Sustainability from './Components/Sustainbility/Sustainbility'
+import TestNet from './Components/TestNet/TestNet';
+import '../src/Components/Research/Research.css';
+import Research from './Components/Research/Research'
+import Sustainbility from './Components/Sustainbility/Sustainbility';
+import './Components/Home2/Home2.css';
 
-function App() {
+const App = () => {
+    return (
+            <Routes>
+                <Route path='/' exact  element={<Landing />} />
+                <Route path='/testnet' exact  element={<TestNet />} />
+                <Route path='/research' exact  element={<Research />} />
+                <Route path='/sustain' exact  element={<Sustainbility />} />
+            </Routes>
+        )
+};
 
-  return (
-   <>
-    {/* <Sustainability /> */}
-    <Landing />
-   </>
-  )
-}
-
-export default App
+export default App;
