@@ -6,6 +6,11 @@ import './index.css';
 import '../src/Components/SideNav/SideNav.css';
 import '../src/Components/Home/Home.css';
 import '../src/Components/Sustainbility/Sustainability.css';
+import TestNet from "./Components/TestNet/TestNet"
+import Research from './Components/Research/Research';
+import './Components/Research/Research.css';
+import Sustainbility from "./Components/Sustainbility/Sustainbility"
+import "./Components/Home2/Home2.css"
 
 
 const App = () => {

@@ -2,12 +2,14 @@ import React from 'react'
 import '../Research/Research.css'
 import logo from "../Sustainbility/5ire-logo.svg"
 import Footer from '../Footer/Footer'
+import SideNav from '../SideNav/SideNav'
+
 
 
 const Research = () => {
   return (
     <>
-
+      <SideNav number={4} />
       <main className='sustain h-[100vh] '>
 
         <div className="flex flex-col  bg-no-repeat bg-cover bg-center">
