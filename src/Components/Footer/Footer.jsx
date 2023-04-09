@@ -46,7 +46,7 @@ const Footer = () => {
                     <li className='my-4'>Brand Kit</li>
                 </ul>
             </div>
-            <div className="text-left    w-[15%] h-[89%]">
+            <div className="text-left w-[15%] h-[89%]">
                 <h1 className='text-3xl mb-2 text-[#26a0a0]'>Foundation</h1>
                 <ul className='text-white text-left'>
                     <li className='my-4'>Reasearch</li>
