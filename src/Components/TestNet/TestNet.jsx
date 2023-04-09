@@ -6,10 +6,12 @@ import VidImg from "../TestNet/5ire-video.png"
 // import Footer from '../Footer/Footer';
 import { BsArrowUpRight } from "react-icons/bs"
 import Footer from '../Footer/Footer';
+import SideNav from '../SideNav/SideNav';
 
 const TestNet = () => {
     return (
         <>
+        <SideNav number={3} />
             <main className="sustain flex flex-col  bg-no-repeat bg-cover bg-center">
                 <div className="sustain-content flex flex-col justify-center items-center  -green-500  m-auto w-[85vw] h-[90vh] ">
                     <div className="heading m-4 w-[100%] flex flex-col text-center">

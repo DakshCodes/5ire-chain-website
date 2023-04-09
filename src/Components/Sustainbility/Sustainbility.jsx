@@ -3,10 +3,12 @@ import "../Sustainbility/Sustainability.css";
 import Nature from "../Sustainbility/Nature.svg"
 import logo from "../Sustainbility/5ire-Logo.svg"
 import Footer from '../Footer/Footer';
+import SideNav from '../SideNav/SideNav';
 
 const Sustainbility = () => {
   return (
     <>
+    <SideNav number={6} />
       {/* This is the Sustainability Homepage */}
       <main className="sustain flex flex-col  bg-no-repeat bg-cover bg-center">
         <div className="sustain-content flex items-center justify-between m-auto w-[85vw] h-[90vh] ">

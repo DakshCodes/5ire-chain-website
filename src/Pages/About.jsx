@@ -1,10 +1,11 @@
 import React from 'react'
+import SideNav from '../Components/SideNav/SideNav'
 
 const About = () => {
   return (
-    <div>
-      
-    </div>
+   <>
+     <SideNav  />
+   </>
   )
 }
 

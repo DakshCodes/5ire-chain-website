@@ -1,0 +1,9 @@
+.home2-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+.home2-box div:nth-child(even){
+   align-self: flex-end;
+}

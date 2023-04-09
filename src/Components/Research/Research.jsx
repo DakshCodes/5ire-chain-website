@@ -3,9 +3,11 @@ import '../Research/Research.css'
 import logo from "../Sustainbility/5ire-logo.svg"
 import Footer from '../Footer/Footer'
 
+
 const Research = () => {
   return (
     <>
+
       <main className='sustain h-[100vh] '>
 
         <div className="flex flex-col  bg-no-repeat bg-cover bg-center">
